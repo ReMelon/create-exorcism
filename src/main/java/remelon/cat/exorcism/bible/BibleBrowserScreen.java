@@ -1,4 +1,4 @@
-package remelon.cat.exorcism;
+package remelon.cat.exorcism.bible;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -12,7 +12,6 @@ import net.minecraft.text.Text;
 
 import java.util.List;
 
-// BibleBrowserScreen.java
 @Environment(EnvType.CLIENT)
 public class BibleBrowserScreen extends Screen {
 

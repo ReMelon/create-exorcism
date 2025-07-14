@@ -4,6 +4,7 @@ package remelon.cat.exorcism;
 import com.tterrag.registrate.util.entry.ItemEntry;
 
 import net.minecraft.util.Rarity;
+import remelon.cat.exorcism.bible.BibleItem;
 
 public class ExorcismItems {
 	public static final ItemEntry<BibleItem> BIBLE = Exorcism.EXO_REGISTRATE

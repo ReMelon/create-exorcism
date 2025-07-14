@@ -1,10 +1,9 @@
-package remelon.cat.exorcism;
+package remelon.cat.exorcism.bible;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
 
-// BibleScreenHandler.java (Client-only)
 @Environment(EnvType.CLIENT)
 public class BibleScreenHandler {
 

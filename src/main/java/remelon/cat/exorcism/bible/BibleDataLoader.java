@@ -1,4 +1,4 @@
-package remelon.cat.exorcism;
+package remelon.cat.exorcism.bible;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -7,7 +7,6 @@ import net.fabricmc.fabric.api.resource.IdentifiableResourceReloadListener;
 import net.minecraft.resource.Resource;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.resource.ResourceReloader;
-import net.minecraft.resource.SimpleResourceReload;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.profiler.Profiler;
 import remelon.cat.exorcism.Exorcism;

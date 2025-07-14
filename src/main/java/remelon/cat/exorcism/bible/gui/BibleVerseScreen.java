@@ -1,10 +1,11 @@
-package remelon.cat.exorcism;
+package remelon.cat.exorcism.bible.gui;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.text.OrderedText;
 import net.minecraft.text.Text;
+import remelon.cat.exorcism.bible.BibleDataLoader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +14,7 @@ public class BibleVerseScreen extends Screen {
 	private final Screen parent;
 	private final int bookIndex;
 	private final int chapterIndex;
-	private final String bookName; // ⭐ Added field to store the book name
+	private final String bookName;
 	private final List<OrderedText> wrappedText = new ArrayList<>();
 	private int scrollOffset = 0;
 	private int maxScrollOffset = 0;
@@ -25,7 +26,6 @@ public class BibleVerseScreen extends Screen {
 		this.parent = parent;
 		this.bookIndex = bookIndex;
 		this.chapterIndex = chapterIndex;
-		// ⭐ Fetched the book name in the constructor
 		this.bookName = BibleDataLoader.bibleJson.getAsJsonArray("books")
 				.get(bookIndex).getAsJsonObject()
 				.get("name").getAsString();
@@ -56,13 +56,11 @@ public class BibleVerseScreen extends Screen {
 			var lines = textRenderer.wrapLines(Text.literal(line), width - 40);
 			wrappedText.addAll(lines);
 
-			// Extra space between verses
 			wrappedText.add(textRenderer.wrapLines(Text.literal(" "), width - 40).get(0));
 		}
 
-		// ⭐ Adjusted layout for the new title (view starts at 60 instead of 40)
 		int totalTextHeight = this.wrappedText.size() * 14;
-		int viewHeight = this.height - 60 - 10; // Top and bottom margins
+		int viewHeight = this.height - 60 - 10;
 		this.maxScrollOffset = Math.max(0, totalTextHeight - viewHeight);
 
 		addDrawableChild(ButtonWidget.builder(Text.literal("←"), b -> client.setScreen(parent))
@@ -75,11 +73,9 @@ public class BibleVerseScreen extends Screen {
 	public void render(DrawContext context, int mouseX, int mouseY, float delta) {
 		this.renderBackground(context);
 
-		// ⭐ Render the title text
 		String title = this.bookName + " " + (this.chapterIndex + 1);
 		context.drawCenteredTextWithShadow(this.textRenderer, title, this.width / 2, 20, 0xFFFFFF);
 
-		// ⭐ Adjusted view top to make space for the title
 		int viewTop = 60;
 		int viewBottom = this.height - 10;
 		int viewHeight = viewBottom - viewTop;
@@ -109,7 +105,7 @@ public class BibleVerseScreen extends Screen {
 	@Override
 	public boolean mouseClicked(double mouseX, double mouseY, int button) {
 		if (button == 0 && this.maxScrollOffset > 0) {
-			int viewTop = 60; // ⭐ Adjusted coordinate
+			int viewTop = 60;
 			int viewBottom = this.height - 10;
 			int viewHeight = viewBottom - viewTop;
 			int totalTextHeight = wrappedText.size() * 14;
@@ -130,7 +126,7 @@ public class BibleVerseScreen extends Screen {
 	@Override
 	public boolean mouseDragged(double mouseX, double mouseY, int button, double deltaX, double deltaY) {
 		if (this.isDraggingScrollbar && button == 0) {
-			int viewTop = 60; // ⭐ Adjusted coordinate
+			int viewTop = 60;
 			int viewBottom = this.height - 10;
 			int viewHeight = viewBottom - viewTop;
 			int totalTextHeight = wrappedText.size() * 14;
@@ -145,7 +141,6 @@ public class BibleVerseScreen extends Screen {
 		return super.mouseDragged(mouseX, mouseY, button, deltaX, deltaY);
 	}
 
-	// Unchanged methods
 	@Override
 	public boolean mouseReleased(double mouseX, double mouseY, int button) {
 		if (button == 0) {
