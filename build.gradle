@@ -7,7 +7,7 @@ base.archivesName = archives_base_name
 group = project.maven_group
 
 // Formats the mod version to include the Minecraft version and build number (if present)
-// example: 1.0.0+1.18.2-build.100
+// cat: 1.0.0+1.18.2-build.100
 String buildNumber = System.getenv("GITHUB_RUN_NUMBER")
 version = "$mod_version+$minecraft_version" + (buildNumber != null ? "-build.$buildNumber" : "")
 
@@ -16,7 +16,7 @@ repositories {
 
 	maven { url = "https://mvn.devos.one/releases" } // Porting Lib releases
 	maven { url = "https://mvn.devos.one/snapshots" } // Create and several dependencies
-	maven { url = "https://maven.tterrag.com/" } // Flywheel
+	maven { url = "https://modmaven.dev" } // Flywheel
 	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
 	maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven" } // Forge Config API Port
 
@@ -41,10 +41,7 @@ configurations.configureEach {
 dependencies {
 	// Setup
 	minecraft("com.mojang:minecraft:$minecraft_version")
-	mappings(loom.layered {
-		it.officialMojangMappings { nameSyntheticMembers = false }
-		it.parchment("org.parchmentmc.data:parchment-$minecraft_version:$parchment_version@zip")
-	})
+	mappings("net.fabricmc:yarn:${yarn_mappings}:v2")
 	modImplementation("net.fabricmc:fabric-loader:$fabric_loader_version")
 
 	// dependencies

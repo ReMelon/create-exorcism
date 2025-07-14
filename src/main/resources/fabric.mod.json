@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "exorcism",
   "version": "${version}",
-  "name": "Example Mod",
+  "name": "Create: Exorcism",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
     "Me!"
@@ -11,15 +11,18 @@
     "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
   },
   "license": "CC0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/exorcism/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.modid.ExampleMod"
+      "remelon.cat.exorcism.Exorcism"
+    ],
+    "client": [
+      "remelon.cat.exorcism.ExorcismClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "exorcism.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
