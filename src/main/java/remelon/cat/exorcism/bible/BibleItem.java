@@ -1,5 +1,5 @@
-// BibleItem.java
-package remelon.cat.exorcism;
+// bible.java
+package remelon.cat.exorcism.bible;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.Item;
@@ -8,7 +8,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import net.minecraft.entity.player.PlayerEntity;
-import remelon.cat.exorcism.BibleScreenHandler;
+import remelon.cat.exorcism.bible.gui.BibleBookScreen;
 
 public class BibleItem extends Item {
 	public BibleItem(Settings settings) {
