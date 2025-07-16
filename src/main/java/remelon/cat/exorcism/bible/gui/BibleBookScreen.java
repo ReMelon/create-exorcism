@@ -23,6 +23,8 @@ public class BibleBookScreen extends Screen {
 	private int maxScrollOffset = 0;
 	private boolean isDraggingScrollbar = false;
 	private double dragStartOffsetY = 0.0;
+	private String translationName = "";
+
 
 	private record BookEntry(String name, int index) {}
 
@@ -43,6 +45,11 @@ public class BibleBookScreen extends Screen {
 		addDrawableChild(searchBox);
 
 		this.filterBooks();
+
+		if (BibleDataLoader.bibleJson.has("translation")) {
+			translationName = BibleDataLoader.bibleJson.get("translation").getAsString();
+		}
+
 	}
 
 	private void filterBooks() {
@@ -93,6 +100,7 @@ public class BibleBookScreen extends Screen {
 		context.disableScissor();
 		renderScrollbar(context);
 		super.render(context, mouseX, mouseY, delta);
+		context.drawTextWithShadow(this.textRenderer, translationName, 40, 35, 0xAAAAAA);
 	}
 
 	private void renderScrollbar(DrawContext context) {

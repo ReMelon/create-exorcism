@@ -10,6 +10,10 @@ import com.simibubi.create.foundation.item.TooltipModifier;
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
+import net.minecraft.particle.DefaultParticleType;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -33,6 +37,8 @@ public class Exorcism implements ModInitializer {
 	public static Identifier GenID(String name) {
 		return new Identifier(ID, name);
 	}
+	public static final DefaultParticleType HOLY_CROSS_PARTICLE = FabricParticleTypes.simple();
+
 
 
 	@Override
@@ -42,11 +48,15 @@ public class Exorcism implements ModInitializer {
 				() -> () -> "{} is accessing Porting Lib from the client!",
 				() -> () -> "{} is accessing Porting Lib from the server!"
 		), NAME);
+
+		Registry.register(Registries.PARTICLE_TYPE, new Identifier(ID, "holy_cross_particle"), HOLY_CROSS_PARTICLE);
+
 		ExorcismItems.register();
 		HolyFluid.register();
 		ExorcisingRecipeRegistry.register();
 		CreativeTab.registerItemGroups();
 		EXFanProcessingTypes.register();
+		BiblePacks.register();
 		EXO_REGISTRATE.register();
 	}
 

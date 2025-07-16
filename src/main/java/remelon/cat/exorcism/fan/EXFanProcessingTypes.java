@@ -89,7 +89,7 @@ public class EXFanProcessingTypes extends AllFanProcessingTypes {
 			Vec3d newPos = pos.add(offset);
 			world.addParticle(ParticleTypes.ENCHANT, newPos.x, newPos.y + .45, newPos.z, 0, 0, 0);
 			if (world.random.nextInt(2) == 0)
-				world.addParticle(ParticleTypes.SPLASH, newPos.x, newPos.y + .25, newPos.z, 0, 0, 0);
+				world.addParticle(Exorcism.HOLY_CROSS_PARTICLE, newPos.x, newPos.y + .25, newPos.z, 0, 0, 0);
 		}
 
 		@Override
