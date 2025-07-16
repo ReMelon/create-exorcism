@@ -1,6 +1,8 @@
 // bible.java
 package remelon.cat.exorcism.bible;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -15,7 +17,7 @@ public class BibleItem extends Item {
 		super(settings);
 	}
 
-	@Override
+	@Override @Environment(EnvType.CLIENT)
 	public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
 		if (world.isClient) {
 			MinecraftClient.getInstance().setScreen(new BibleBookScreen(null));

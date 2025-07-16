@@ -1,0 +1,13 @@
+{
+  "type": "exorcism:exorcising",
+  "ingredients": [
+    {
+      "item": "minecraft:warped_fungus"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:brown_mushroom"
+    }
+  ]
+}

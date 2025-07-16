@@ -1,0 +1,13 @@
+{
+  "type": "exorcism:exorcising",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_brick"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:brick"
+    }
+  ]
+}

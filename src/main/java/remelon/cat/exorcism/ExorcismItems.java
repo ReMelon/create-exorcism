@@ -1,4 +1,3 @@
-// exorcismItems.java
 package remelon.cat.exorcism;
 
 import com.tterrag.registrate.util.entry.ItemEntry;
@@ -11,6 +10,7 @@ public class ExorcismItems {
 			.item("bible", BibleItem::new)
 			.properties(p -> p.maxCount(1))
 			.properties(p -> p.maxCount(1).rarity(Rarity.UNCOMMON))
+			.tab(CreativeTab.EXORCISM_TAB.key())
 			.register();
 
 	public static void register() {

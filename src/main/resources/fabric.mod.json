@@ -19,6 +19,9 @@
     ],
     "client": [
       "remelon.cat.exorcism.ExorcismClient"
+    ],
+    "fabric-datagen": [
+      "remelon.cat.exorcism.ExorcismDataGen"
     ]
   },
   "mixins": [

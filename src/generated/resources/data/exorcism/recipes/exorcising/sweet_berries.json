@@ -1,0 +1,13 @@
+{
+  "type": "exorcism:exorcising",
+  "ingredients": [
+    {
+      "item": "minecraft:glow_berries"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:sweet_berries"
+    }
+  ]
+}

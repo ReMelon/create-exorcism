@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "exorcism:bible"
+    }
+  ],
+  "results": [
+    {
+      "item": "exorcism:holy_water_bucket"
+    }
+  ],
+  "keepHeldItem": true
+}

@@ -70,6 +70,37 @@ dependencies {
 //    modCompileOnly("dev.emi:emi:$emi_version")
 }
 
+loom {
+	runs {
+		datagen {
+			client()
+
+			name "Data Generator"
+			vmArg "-Dfabric-api.datagen"
+			vmArg "-Dfabric-api.datagen.output-dir=${file("src/generated/resources")}"
+			vmArg "-Dfabric-api.datagen.modid=exorcism"
+			vmArg "-Dporting_lib.datagen.existing_resources=${file("src/main/resources")}"
+
+
+			runDir "build/datagen"
+		}
+
+		/*server {
+			runDir "run/server"
+		}*/
+	}
+
+}
+
+sourceSets {
+	main {
+		resources {
+			srcDir("src/generated/resources")
+			exclude("src/generated/resources/.cache")
+		}
+	}
+}
+
 processResources {
 	// require dependencies to be the version compiled against or newer
 	Map<String, Object> properties = [

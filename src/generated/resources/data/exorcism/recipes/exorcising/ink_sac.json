@@ -1,0 +1,13 @@
+{
+  "type": "exorcism:exorcising",
+  "ingredients": [
+    {
+      "item": "minecraft:glow_ink_sac"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:ink_sac"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "exorcism:exorcising",
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_fungus"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:red_mushroom"
+    }
+  ]
+}

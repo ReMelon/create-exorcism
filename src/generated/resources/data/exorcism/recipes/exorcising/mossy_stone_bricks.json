@@ -1,0 +1,13 @@
+{
+  "type": "exorcism:exorcising",
+  "ingredients": [
+    {
+      "item": "minecraft:infested_mossy_stone_bricks"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:mossy_stone_bricks"
+    }
+  ]
+}

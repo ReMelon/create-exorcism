@@ -1,13 +1,9 @@
 package remelon.cat.exorcism;
 
 import com.simibubi.create.Create;
-
 import com.simibubi.create.foundation.data.CreateRegistrate;
-
 import com.simibubi.create.foundation.item.ItemDescription;
-
 import com.simibubi.create.foundation.item.KineticStats;
-
 import com.simibubi.create.foundation.item.TooltipHelper;
 import com.simibubi.create.foundation.item.TooltipModifier;
 
@@ -19,12 +15,16 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import remelon.cat.exorcism.fan.EXFanProcessingTypes;
+import remelon.cat.exorcism.recipe.ExorcisingRecipeRegistry;
+
 public class Exorcism implements ModInitializer {
 	public static final String ID = "exorcism";
-	public static final String NAME = "Create: exorcism";
+	public static final String NAME = "Create: Exorcism";
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 
 	public static final CreateRegistrate EXO_REGISTRATE = CreateRegistrate.create("exorcism");
+
 	static {
 		EXO_REGISTRATE.setTooltipModifierFactory(item -> new ItemDescription.Modifier(item, TooltipHelper.Palette.STANDARD_CREATE)
 				.andThen(TooltipModifier.mapNull(KineticStats.create(item))));
@@ -43,6 +43,10 @@ public class Exorcism implements ModInitializer {
 				() -> () -> "{} is accessing Porting Lib from the server!"
 		), NAME);
 		ExorcismItems.register();
+		HolyFluid.register();
+		ExorcisingRecipeRegistry.register();
+		CreativeTab.registerItemGroups();
+		EXFanProcessingTypes.register();
 		EXO_REGISTRATE.register();
 	}
 

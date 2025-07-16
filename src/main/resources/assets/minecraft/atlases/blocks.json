@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "type": "single",
+      "resource": "exorcism:fluid/holy_water_still"
+    },
+    {
+      "type": "single",
+      "resource": "exorcism:fluid/holy_water_flow"
+    }
+  ]
+}
