@@ -1,8 +1,8 @@
-// 1.20.1	2025-07-16T14:58:57.172518	Create: Exorcism/Registrate Provider for exorcism [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+// 1.20.1	2025-07-17T20:45:28.0354613	Create: Exorcism/Registrate Provider for exorcism [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
 32891fb324edfd7779dec829290e56f62a2a85a9 assets\exorcism\models\item\holy_water_bucket.json
 59d9f743f90cbee4f12689ed5354c19e5701a144 assets\exorcism\blockstates\holy_water.json
-fa8543cfd20171e559e5e2e07aab00506e38a0bd assets\exorcism\lang\en_ud.json
-f9b41c010cb73c0b36e8ac1f7266118e2a58489f assets\exorcism\lang\en_us.json
+63497e6218c7dd50c1071c613061c4192f0359c2 assets\exorcism\lang\en_ud.json
+616b473462554dbc1795e0328b07930d265ba89c assets\exorcism\lang\en_us.json
 b781958cca10572023be0d2727c2fac88fce2f54 data\minecraft\tags\fluids\water.json
 ef28cedd37513f8940c9fa9b6f3bbdd9bf5c134a assets\exorcism\models\block\holy_water.json
 b778b968933f80085c7913fb0ddac3a03ab28363 assets\exorcism\models\item\bible.json

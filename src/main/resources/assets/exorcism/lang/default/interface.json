@@ -1,5 +1,9 @@
 {
   "exorcism.itemtab": "Create: Exorcism",
   "kjv-pack": "KJV Version of the Bible",
-  "bsb-pack": "BSB Version of the Bible"
+  "bsb-pack": "BSB Version of the Bible",
+  "exorcism.exorcising.fan.recipe": "Bulk Exorcising",
+  "exorcism.fan.recipe": "Bulk Exorcising",
+  "emi.category.exorcism.fan_exorcising": "Bulk Exorcising",
+  "create.recipe.fan_exorcising.fan": "Fan behind Holy Water"
 }

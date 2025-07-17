@@ -22,6 +22,15 @@
     ],
     "fabric-datagen": [
       "remelon.cat.exorcism.ExorcismDataGen"
+    ],
+    "emi": [
+      "remelon.cat.exorcism.compat.recipe.EMI"
+    ],
+    "jei_mod_plugin": [
+    "remelon.cat.exorcism.compat.recipe.JEI"
+    ],
+    "rei_client": [
+      "remelon.cat.exorcism.compat.recipe.REI"
     ]
   },
   "mixins": [

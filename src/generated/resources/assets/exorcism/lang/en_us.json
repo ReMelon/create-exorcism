@@ -1,7 +1,13 @@
 {
   "block.exorcism.holy_water": "Holy Water",
+  "bsb-pack": "BSB Version of the Bible",
+  "create.recipe.fan_exorcising.fan": "Fan behind Holy Water",
+  "emi.category.exorcism.fan_exorcising": "Bulk Exorcising",
+  "exorcism.exorcising.fan.recipe": "Bulk Exorcising",
+  "exorcism.fan.recipe": "Bulk Exorcising",
   "exorcism.itemtab": "Create: Exorcism",
   "fluid.exorcism.holy_water": "Holy Water",
   "item.exorcism.bible": "Bible",
-  "item.exorcism.holy_water_bucket": "Bucket of Holy Water"
+  "item.exorcism.holy_water_bucket": "Bucket of Holy Water",
+  "kjv-pack": "KJV Version of the Bible"
 }
