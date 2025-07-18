@@ -10,7 +10,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ExorcismResourcePacks {
-	@Environment(EnvType.CLIENT)
 	public static void KJV() {
 		if (FabricLoader.getInstance().isModLoaded("exorcism")) {
 			ModContainer crystallized = FabricLoader.getInstance().getModContainer(Exorcism.ID)

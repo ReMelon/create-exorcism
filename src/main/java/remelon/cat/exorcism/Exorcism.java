@@ -56,7 +56,6 @@ public class Exorcism implements ModInitializer {
 		ExorcisingRecipeRegistry.register();
 		ExorcismItemGroup.registerItemGroups();
 		ExorcismFanProcessingTypes.register();
-		ExorcismResourcePacks.register();
 		EXO_REGISTRATE.register();
 	}
 

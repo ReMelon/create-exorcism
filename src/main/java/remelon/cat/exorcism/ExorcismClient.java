@@ -16,6 +16,7 @@ public class ExorcismClient implements ClientModInitializer {
 		ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES)
 				.registerReloadListener(new BibleDataLoader());
 
+		ExorcismResourcePacks.register();
 		ParticleFactoryRegistry.getInstance().register(Exorcism.HOLY_CROSS_PARTICLE, EndRodParticle.Factory::new);
 	}
 }

@@ -5,13 +5,12 @@
       "item": "minecraft:soul_campfire"
     }
   ],
-  "processingTime": 100,
   "results": [
     {
       "item": "minecraft:campfire"
     },
     {
-      "chance": 0.2,
+      "chance": 0.1,
       "item": "minecraft:charcoal"
     }
   ]

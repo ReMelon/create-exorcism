@@ -5,13 +5,12 @@
       "item": "minecraft:poisonous_potato"
     }
   ],
-  "processingTime": 100,
   "results": [
     {
       "item": "minecraft:potato"
     },
     {
-      "chance": 0.2,
+      "chance": 0.1,
       "item": "minecraft:potato"
     }
   ]

@@ -1,4 +1,4 @@
-// 1.20.1	2025-07-18T18:32:15.778081	Create: Exorcism/Registrate Provider for exorcism [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+// 1.20.1	2025-07-18T19:16:50.6376275	Create: Exorcism/Registrate Provider for exorcism [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
 32891fb324edfd7779dec829290e56f62a2a85a9 assets\exorcism\models\item\holy_water_bucket.json
 59d9f743f90cbee4f12689ed5354c19e5701a144 assets\exorcism\blockstates\holy_water.json
 63497e6218c7dd50c1071c613061c4192f0359c2 assets\exorcism\lang\en_ud.json

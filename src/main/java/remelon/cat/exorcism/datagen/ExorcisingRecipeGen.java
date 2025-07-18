@@ -59,7 +59,6 @@ public class ExorcisingRecipeGen extends ProcessingRecipeGen {
 						.require(input)
 						.output(guaranteedOutput)
 						.output(bonusChance, bonusOutput)
-						.duration(100)
 		);
 	}
 
