@@ -19,7 +19,7 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import remelon.cat.exorcism.fan.EXFanProcessingTypes;
+import remelon.cat.exorcism.fan.ExorcismFanProcessingTypes;
 import remelon.cat.exorcism.recipe.ExorcisingRecipeRegistry;
 
 public class Exorcism implements ModInitializer {
@@ -52,11 +52,11 @@ public class Exorcism implements ModInitializer {
 		Registry.register(Registries.PARTICLE_TYPE, new Identifier(ID, "holy_cross_particle"), HOLY_CROSS_PARTICLE);
 
 		ExorcismItems.register();
-		HolyFluid.register();
+		ExorcismFluid.register();
 		ExorcisingRecipeRegistry.register();
-		CreativeTab.registerItemGroups();
-		EXFanProcessingTypes.register();
-		BiblePacks.register();
+		ExorcismItemGroup.registerItemGroups();
+		ExorcismFanProcessingTypes.register();
+		ExorcismResourcePacks.register();
 		EXO_REGISTRATE.register();
 	}
 

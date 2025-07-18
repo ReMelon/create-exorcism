@@ -8,7 +8,7 @@ import com.simibubi.create.foundation.gui.element.GuiGameElement;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.text.Text;
-import remelon.cat.exorcism.HolyFluid;
+import remelon.cat.exorcism.ExorcismFluid;
 import remelon.cat.exorcism.recipe.ExorcisingRecipe;
 
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -29,7 +29,7 @@ public class ExorcisingCategoryJEI extends ProcessingViaFanCategory.MultiOutput<
 
 	@Override
 	protected void renderAttachedBlock(DrawContext graphics) {
-		GuiGameElement.of(HolyFluid.HOLY_WATER.getUnchecked())
+		GuiGameElement.of(ExorcismFluid.HOLY_WATER.getUnchecked())
 				.scale(SCALE)
 				.atLocal(0, 0, 2)
 				.lighting(AnimatedKinetics.DEFAULT_LIGHTING)

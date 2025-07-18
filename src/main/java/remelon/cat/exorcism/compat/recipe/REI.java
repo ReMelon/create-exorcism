@@ -35,6 +35,7 @@ import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.util.Identifier;
 import remelon.cat.exorcism.Exorcism;
+import remelon.cat.exorcism.ExorcismFluid;
 import remelon.cat.exorcism.ExorcismItems;
 import remelon.cat.exorcism.recipe.ExorcisingRecipe;
 import remelon.cat.exorcism.recipe.ExorcisingRecipeTypes;
@@ -61,7 +62,7 @@ public class REI implements REIClientPlugin {
 				exorcising = builder(ExorcisingRecipe.class)
 				.addTypedRecipes(ExorcisingRecipeTypes.EXORCISING)
 				.catalystStack(ProcessingViaFanCategory.getFan("fan_exorcising"))
-				.doubleItemIcon(AllItems.PROPELLER.get(), ExorcismItems.BIBLE.asItem())
+				.doubleItemIcon(AllItems.PROPELLER.get(), ExorcismFluid.HOLY_WATER.get().getBucketItem())
 				.emptyBackground(178, 72)
 				.build("fan_exorcising", ExorcisingCategoryREI::new)
 				;

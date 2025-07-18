@@ -6,7 +6,7 @@ import com.simibubi.create.foundation.gui.element.GuiGameElement;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.text.Text;
-import remelon.cat.exorcism.HolyFluid;
+import remelon.cat.exorcism.ExorcismFluid;
 import remelon.cat.exorcism.compat.recipe.EMI;
 import remelon.cat.exorcism.recipe.ExorcisingRecipe;
 
@@ -17,7 +17,7 @@ public class ExorcisingCategoryEMI extends FanEmiRecipe.MultiOutput<ExorcisingRe
 
 	@Override
 	protected void renderAttachedBlock(DrawContext graphics) {
-		GuiGameElement.of(HolyFluid.HOLY_WATER.getUnchecked())
+		GuiGameElement.of(ExorcismFluid.HOLY_WATER.getUnchecked())
 				.scale(SCALE)
 				.atLocal(0, 0, 2)
 				.lighting(CreateEmiAnimations.DEFAULT_LIGHTING)

@@ -21,17 +21,13 @@ import net.minecraft.util.Identifier;
 import static net.minecraft.item.Items.BUCKET;
 import static remelon.cat.exorcism.Exorcism.EXO_REGISTRATE;
 
-public class HolyFluid {
+public class ExorcismFluid {
 	public static final Identifier HOLY_STILL_ID = Exorcism.GenID("fluid/holy_water_still");
 	public static final Identifier HOLY_FLOW_ID = Exorcism.GenID("fluid/holy_water_flow");
 
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> HOLY_WATER = EXO_REGISTRATE
 			.fluid("holy_water", HOLY_STILL_ID, HOLY_FLOW_ID)
 			.lang("Holy Water")
-			.fluidProperties(p -> p.levelDecreasePerBlock(2)
-					.tickRate(25)
-					.flowSpeed(4)
-					.blastResistance(100f))
 			.fluidAttributes(()->new FluidVariantAttributeHandler(){
 				@Override
 				public Text getName(FluidVariant fluidVariant) {
@@ -41,15 +37,17 @@ public class HolyFluid {
 				public boolean isLighterThanAir(FluidVariant variant) {
 					return false;
 				}
+
 			})
 			.tag(FluidTags.WATER)
 			.source(SimpleFlowableFluid.Source::new)
 			.renderType(() -> () -> RenderLayer.getTranslucent())
 			.block()
 			.properties(p -> p.liquid().mapColor(DyeColor.LIGHT_BLUE))
+			.properties(p -> p.luminance(value -> 10))
 			.build()
 			.bucket()
-			.tab(CreativeTab.EXORCISM_TAB.key())
+			.tab(ExorcismItemGroup.EXORCISM_TAB.key())
 			.lang("Bucket of Holy Water")
 			.build()
 			.onRegisterAfter(RegistryKeys.ITEM, holy -> {

@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 import java.util.function.Supplier;
 
 
-public class CreativeTab {
+public class ExorcismItemGroup {
 	public static final TabInfo EXORCISM_TAB = register("Create: Exorcism",
 			() -> FabricItemGroup.builder()
 					.displayName(Text.translatable("exorcism.itemtab"))

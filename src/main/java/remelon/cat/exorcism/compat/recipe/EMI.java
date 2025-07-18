@@ -53,10 +53,9 @@ import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
 
 import remelon.cat.exorcism.Exorcism;
+import remelon.cat.exorcism.ExorcismFluid;
 import remelon.cat.exorcism.ExorcismItems;
-import remelon.cat.exorcism.HolyFluid;
 import remelon.cat.exorcism.compat.recipe.category.ExorcisingCategoryEMI;
-import remelon.cat.exorcism.fan.EXFanProcessingTypes;
 import remelon.cat.exorcism.recipe.ExorcisingRecipeTypes;
 
 import java.util.LinkedHashMap;
@@ -71,7 +70,7 @@ public class EMI implements EmiPlugin {
 	public static final Map<Identifier, EmiRecipeCategory> ALL = new LinkedHashMap<>();
 
 	public static final EmiRecipeCategory
-			FAN_EXORCISING = register("fan_exorcising", DoubleItemIcon.of(AllItems.PROPELLER.get(), ExorcismItems.BIBLE.asItem()));
+			FAN_EXORCISING = register("fan_exorcising", DoubleItemIcon.of(AllItems.PROPELLER.get(), ExorcismFluid.HOLY_WATER.get().getBucketItem()));
 
 
 	@Override

@@ -5,9 +5,14 @@
       "item": "minecraft:crimson_fungus"
     }
   ],
+  "processingTime": 100,
   "results": [
     {
       "item": "minecraft:red_mushroom"
+    },
+    {
+      "chance": 0.1,
+      "item": "minecraft:nether_wart"
     }
   ]
 }

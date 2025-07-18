@@ -5,9 +5,14 @@
       "item": "minecraft:glow_ink_sac"
     }
   ],
+  "processingTime": 100,
   "results": [
     {
       "item": "minecraft:ink_sac"
+    },
+    {
+      "chance": 0.2,
+      "item": "minecraft:lily_pad"
     }
   ]
 }

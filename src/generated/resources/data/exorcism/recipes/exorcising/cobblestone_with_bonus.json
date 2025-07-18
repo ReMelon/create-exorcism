@@ -5,9 +5,14 @@
       "item": "minecraft:blackstone"
     }
   ],
+  "processingTime": 100,
   "results": [
     {
       "item": "minecraft:cobblestone"
+    },
+    {
+      "chance": 0.1,
+      "item": "minecraft:basalt"
     }
   ]
 }

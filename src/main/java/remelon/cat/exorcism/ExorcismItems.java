@@ -10,7 +10,7 @@ public class ExorcismItems {
 			.item("bible", BibleItem::new)
 			.properties(p -> p.maxCount(1))
 			.properties(p -> p.maxCount(1).rarity(Rarity.UNCOMMON))
-			.tab(CreativeTab.EXORCISM_TAB.key())
+			.tab(ExorcismItemGroup.EXORCISM_TAB.key())
 			.register();
 
 	public static void register() {

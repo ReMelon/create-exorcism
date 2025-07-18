@@ -3,14 +3,14 @@
   "id": "exorcism",
   "version": "${version}",
   "name": "Create: Exorcism",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "A biblical Create Addon, adding the Bible, Holy Water, and Exorcising to Minecraft",
   "authors": [
-    "Me!"
+    "ReMelon"
   ],
   "contact": {
-    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+    "sources": "https://github.com/ReMelon/create-exorcism"
   },
-  "license": "CC0",
+  "license": "MIT",
   "icon": "assets/exorcism/icon.png",
   "environment": "*",
   "entrypoints": {

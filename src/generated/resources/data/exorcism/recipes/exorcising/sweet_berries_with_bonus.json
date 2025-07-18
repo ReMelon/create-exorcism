@@ -5,9 +5,14 @@
       "item": "minecraft:glow_berries"
     }
   ],
+  "processingTime": 100,
   "results": [
     {
       "item": "minecraft:sweet_berries"
+    },
+    {
+      "chance": 0.2,
+      "item": "minecraft:bone_meal"
     }
   ]
 }

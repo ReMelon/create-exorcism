@@ -9,6 +9,7 @@ import com.simibubi.create.foundation.utility.VecHelper;
 import it.unimi.dsi.fastutil.objects.Object2ReferenceOpenHashMap;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
@@ -17,7 +18,8 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import remelon.cat.exorcism.Exorcism;
-import remelon.cat.exorcism.HolyFluid;
+import remelon.cat.exorcism.ExorcismDamageTypes;
+import remelon.cat.exorcism.ExorcismFluid;
 import remelon.cat.exorcism.recipe.ExorcisingRecipe;
 import remelon.cat.exorcism.recipe.ExorcisingRecipe.ExorcisingWrapper;
 import remelon.cat.exorcism.recipe.ExorcisingRecipeTypes;
@@ -27,7 +29,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @SuppressWarnings("unused")
-public class EXFanProcessingTypes extends AllFanProcessingTypes {
+public class ExorcismFanProcessingTypes extends AllFanProcessingTypes {
 	public static final ExorcisingType EXORCISING = register("exorcising", new ExorcisingType());
 	private static final Map<String, FanProcessingType> LEGACY_NAME_MAP;
 
@@ -58,7 +60,7 @@ public class EXFanProcessingTypes extends AllFanProcessingTypes {
 		@Override
 		public boolean isValidAt(World world, BlockPos pos) {
 			BlockState state = world.getBlockState(pos);
-			return state.getFluidState().getFluid() == HolyFluid.HOLY_WATER.get().getStill();
+			return state.getFluidState().getFluid() == ExorcismFluid.HOLY_WATER.get().getStill();
 		}
 
 		@Override
@@ -100,7 +102,12 @@ public class EXFanProcessingTypes extends AllFanProcessingTypes {
 
 		@Override
 		public void affectEntity(Entity entity, World world) {
+			if(entity instanceof LivingEntity living && living.isUndead()) {
+				entity.damage(ExorcismDamageTypes.Exorcising(world), 0.5F);
 
+			} else if (entity instanceof LivingEntity living && living.isPlayer()) {
+				((LivingEntity) entity).heal(0.1F);
+			}
 		}
 	}
 }

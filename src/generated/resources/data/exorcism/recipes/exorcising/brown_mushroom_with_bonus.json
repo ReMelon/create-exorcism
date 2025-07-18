@@ -5,9 +5,14 @@
       "item": "minecraft:warped_fungus"
     }
   ],
+  "processingTime": 100,
   "results": [
     {
       "item": "minecraft:brown_mushroom"
+    },
+    {
+      "chance": 0.1,
+      "item": "minecraft:nether_wart"
     }
   ]
 }

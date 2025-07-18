@@ -5,9 +5,14 @@
       "item": "minecraft:nether_brick"
     }
   ],
+  "processingTime": 100,
   "results": [
     {
       "item": "minecraft:brick"
+    },
+    {
+      "chance": 0.2,
+      "item": "minecraft:charcoal"
     }
   ]
 }

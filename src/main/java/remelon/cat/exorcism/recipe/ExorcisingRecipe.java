@@ -5,7 +5,7 @@ import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder.Pro
 import io.github.fabricators_of_create.porting_lib.transfer.item.ItemStackHandlerContainer;
 import net.minecraft.world.World;
 
-public class ExorcisingRecipe extends ProcessingRecipe<ExorcisingRecipe.ExorcisingWrapper> {
+public class  ExorcisingRecipe extends ProcessingRecipe<ExorcisingRecipe.ExorcisingWrapper> {
 
 	public ExorcisingRecipe(ProcessingRecipeParams params) {
 		super(ExorcisingRecipeTypes.EXORCISING, params);

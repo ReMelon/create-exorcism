@@ -9,7 +9,7 @@ import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class BiblePacks {
+public class ExorcismResourcePacks {
 	@Environment(EnvType.CLIENT)
 	public static void KJV() {
 		if (FabricLoader.getInstance().isModLoaded("exorcism")) {
@@ -30,7 +30,7 @@ public class BiblePacks {
 	}
 
 	public static void register() {
-		BiblePacks.KJV();
-		BiblePacks.BSB();
+		ExorcismResourcePacks.KJV();
+		ExorcismResourcePacks.BSB();
 	}
 }

@@ -5,9 +5,14 @@
       "item": "minecraft:soul_torch"
     }
   ],
+  "processingTime": 100,
   "results": [
     {
       "item": "minecraft:torch"
+    },
+    {
+      "chance": 0.2,
+      "item": "minecraft:charcoal"
     }
   ]
 }
