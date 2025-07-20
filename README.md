@@ -1,32 +1,55 @@
-# Create Fabric Addon Template
+<hr>
 
-This template mod comes pre-configured for developing an addon mod for Create on Fabric.
+![Title](https://cdn.modrinth.com/data/cached_images/af4e904297ecf9e23a04342535ffbb24bad49a12.png)
 
+<p align="center">
+  <a href="https://github.com/ReMelon/create-exorcism">
+    <img src="https://img.shields.io/badge/Source-blue?style=for-the-badge&color=fde65d" alt="Source">
+  </a>
+  <a href="https://github.com/ReMelon/create_exorcism/issues">
+    <img src="https://img.shields.io/badge/Issues-blue?style=for-the-badge&color=f7c038" alt="Issues">
+  </a>
+</p>
 
-## Setup
+<p align="center">
+  Create: Exorcism adds the Bible, exorcising, and holy water to the Create mod, with more to come..<br>
+  <strong>It's recommended to use EMI/JEI!</strong>
+</p>
 
-This template is an extension of the base [Fabric Example Mod](https://github.com/FabricMC/fabric-example-mod).
-Setup is mostly the same.
+<p align="center">
 
-Additionally, set `recipe_viewer` in [gradle.properties](gradle.properties). Remember to remove unused
-example code. Make sure versions are up-to-date.
+</p>
 
-When you publish your mod, you should use jars provided by GitHub Actions. These jars will be built in a predictable
-environment and will have build number metadata.
+<hr>
 
-## Features
-- Access to Create and all of its dependencies
-- Mojang Mappings base, with Parchment providing Javadoc and parameters
-- Automatic build workflow with GitHub Actions
-- Developer QOL: Mod Menu, recipe viewers
+<h2>Features (v1)</h2>
 
-## Other Templates
-- [Multi-loader template](https://github.com/Fabricators-of-Create/create-multiloader-addon-template)
-- [Forge-only template](https://github.com/kotakotik22/CreateAddonTemplate)
+<h3>Bible</h3>
+<p>A readable bible, can be used to make Holy Water. (WIP)</p>
+<p>Change Bible versions through the built-in resource packs!</p>
 
-## Help
-Questions? Join us in the #devchat channel of the [Create Discord](https://discord.com/invite/hmaD7Se).
+<h3>Holy Water</h3>
+<p>Can be placed in front of an encased fan to exorcise items!</p>
 
-## License
+<h3>Exorcising</h3>
+<p>Essentially reverse haunting! (WIP)</p>
 
-This template is available under the CC0 license. Feel free to do as you wish with it.
+<hr>
+<h2>Planned</h2>
+<ul>
+  <li>Bible Verse Extraction</li>
+  <li>Bible Item Abilities</li>
+  <li>Holy Potions</li>
+  <li>Remove curses of binding/vanishing using Exorcism</li>
+  <li>Blessed Iron/Tools</li>
+  <li>Better Holy Water Recipe</li>
+</ul>
+
+<hr>
+
+<h2>Requirements</h2>
+<ul>
+  <li>Requires <a href="https://modrinth.com/mod/create">Create</a> OR <a href="https://modrinth.com/mod/create-fabric">Create Fabric</a></li>
+</ul>
+
+<hr>
